@@ -15,6 +15,29 @@ A simple web application to help small businesses track product inventory and ex
 
 ## Getting Started
 
+### 📦 Project Structure
+
+```
+inventory-expiry-tracker-backend/
+├── node_modules/
+├── src/
+│   ├── controllers/
+│   │   └── productController.js
+│   ├── models/
+│   │   └── productModel.js
+│   ├── routes/
+│   │   └── productRoutes.js
+│   ├── db/
+│   │   └── index.js            # DB connection setup
+│   ├── app.js                  # Express app setup
+│   └── server.js               # Server start file
+├── .env                       # Environment variables (DB creds)
+├── .gitignore
+├── package.json
+└── README.md
+
+```
+
 ### Backend Setup
 1. Clone the repo
 2. Install dependencies: `npm install`

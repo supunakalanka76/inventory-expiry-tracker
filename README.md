@@ -21,17 +21,31 @@ A simple web application to help small businesses track product inventory and ex
 inventory-expiry-tracker-backend/
 ├── node_modules/
 ├── src/
-│   ├── controllers/
-│   │   └── productController.js
-│   ├── models/
-│   │   └── productModel.js
-│   ├── routes/
-│   │   └── productRoutes.js
-│   ├── db/
-│   │   └── index.js            # DB connection setup
-│   ├── app.js                  # Express app setup
-│   └── server.js               # Server start file
-├── .env                       # Environment variables (DB creds)
+│ ├── controllers/
+│ │ └── productController.js
+│ ├── models/
+│ │ └── productModel.js
+│ ├── routes/
+│ │ └── productRoutes.js
+│ ├── db/
+│ │ └── index.js                    # DB connection setup
+│ ├── app.js                        # Express app setup
+│ └── server.js                     # Server start file
+├── .env                            # Environment variables (DB creds)
+├── .gitignore
+├── package.json
+└── README.md
+
+inventory-expiry-tracker-frontend/
+├── node_modules/
+├── public/
+├── src/
+│ ├── components/
+│ │ └── ProductList.js             # Main product list component
+│ ├── App.js
+│ ├── index.js
+│ └── styles/
+│ └── ProductList.css
 ├── .gitignore
 ├── package.json
 └── README.md
@@ -45,6 +59,9 @@ inventory-expiry-tracker-backend/
 4. ▶️ Start server: `npm run dev`
 
 ### 🖼️ Frontend Setup
-(To be added)
-
+1. 📥 Navigate to the frontend folder and install dependencies:
+   ``cd inventory-expiry-tracker-frontend``
+    ``npm install``
+2. ▶️ Start the React development server:
+   ```npm start```
 ---

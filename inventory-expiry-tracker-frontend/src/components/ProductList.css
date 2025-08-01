@@ -1,0 +1,163 @@
+/* ProductList.css */
+
+.table-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.table-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.products-table th,
+.products-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.products-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.products-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.products-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.expired-row {
+  background-color: #ffe0e0 !important;
+  color: #b30000;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:nth-child(1) {
+  background-color: #2196F3;
+  color: white;
+}
+
+button:nth-child(2) {
+  background-color: #f44336;
+  color: white;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode .products-table {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.products-table th,
+.products-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.expired-row {
+  background-color: #ffe6e6;
+}
+
+.badge {
+  margin-left: 8px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.badge.expired {
+  background-color: #e74c3c;
+}
+
+.badge.near-expiry {
+  background-color: #f39c12;
+}
+
+.badge.low-stock {
+  background-color: #d35400;
+}
+
+.search-input {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.products-table th {
+  user-select: none;
+}
+
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.badge {
+  margin-left: 6px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: white;
+}
+
+.low-stock {
+  background-color: orange;
+}
+
+.expired {
+  background-color: red;
+}
+
+.near-expiry {
+  background-color: #ff9800;
+}
